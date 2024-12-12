@@ -31,7 +31,7 @@
   line-height: 14px;
   text-align: right;
   padding-top: 2px;
-  height: 14px;
+  min-height: 14px;
 
   &:hover {
     color:rgba(255, 255, 255, 0.5);
@@ -49,4 +49,33 @@
 .header__menu {
   grid-column: 1/2;
 
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: auto;
+  }
+
+  .header__part {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 2/4;
+    width: auto;
+    justify-self: normal;
+  }
+
+  .header__logo {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+
+  .header__phone {
+    align-self: center;
+    width: 226px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
