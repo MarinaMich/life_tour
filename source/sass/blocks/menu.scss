@@ -69,4 +69,39 @@
   .menu__toggle {
     top: 28px;
   }
+
+  .menu__list {
+    padding: 30px 0 70px 45px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .menu__toggle {
+    display: none;
+  }
+
+  .menu--closed .menu__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: none;
+    position: relative;
+    letter-spacing: 0;
+    top: 0;
+    left: 0;
+    width: 610px;
+    padding: 0;
+    padding-left: 13px;
+    margin: 0 auto;
+    background-color: inherit;
+  }
+
+  .menu__link {
+    margin-left: 0;
+  }
+}
+
