@@ -11,10 +11,8 @@
 }
 
 .header__part {
-  //position: absolute;
-  //top: 15px;
-  //right: 15px;
   grid-column: 2/3;
+  justify-self: end;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
@@ -32,6 +30,20 @@
   font-weight: 600;
   line-height: 14px;
   text-align: right;
+  padding-top: 2px;
+  height: 14px;
+
+  &:hover {
+    color:rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    color: $dark_main;
+  }
+
+  &:active {
+    color: $add_blue_button;
+  }
 }
 
 .header__menu {
