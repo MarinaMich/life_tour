@@ -10,28 +10,79 @@
   </head>
 
   <body class="page-body">
-    <header class="header" data-test="header"></header>
+    <header class="header container" data-test="header">
+      <div class="header__part">
+        <a class="header__logo" href="#">
+          <picture>
+            <img src="img/logo.svg" alt="Логотип туристической организации.">
+          </picture>
+        </a>
+        <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+      <nav class="header__menu menu menu--closed">
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link link" href="#tours">Туры</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#training">Обучение</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#about">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="hero" data-test="hero">
         <h1>Захватывающие вершины Кавказа</h1>
       </section>
-      <section class="tours" data-test="tours"></section>
-      <section class="training" data-test="training"></section>
-      <section class="about" data-test="about"></section>
-      <section class="reviews" data-test="reviews"></section>
-      <section class="adv" data-test="adv"></section>
-      <section class="gallery" data-test="gallery"></section>
-      <section class="form" data-test="form"></section>
+      <section class="tours" id="tours" data-test="tours">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="training" id="training" data-test="training">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="about" id="about" data-test="about">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="reviews" id="reviews" data-test="reviews">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="adv" data-test="adv">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="gallery" id="gallery" data-test="gallery">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
+      <section class="form" data-test="form">
+        <h1>Захватывающие вершины Кавказа</h1>
+      </section>
     </main>
-    <footer class="footer" data-test="footer"></footer>
+    <footer class="footer" data-test="footer">
+      <section class="footer__contacts" id="contacts"></section>
+      <section class="footer__main"></section>
+    </footer>
 
-
-    <!-- пример использования спрайта -->
+<!--
+    пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
+    примеры требуемых атрибутов data-test="*"
     <div data-test="header">header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
@@ -42,6 +93,7 @@
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
+  -->
     <script type="module" src="js/main.js"></script>
   </body>
 

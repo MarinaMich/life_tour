@@ -1,0 +1,40 @@
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $add_blue;
+  color: $white;
+  position: relative;
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.header__part {
+  //position: absolute;
+  //top: 15px;
+  //right: 15px;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  width: 142px;
+}
+
+.header__logo img {
+  display: block;
+}
+
+.header__phone {
+  @include link-edit;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: right;
+}
+
+.header__menu {
+  grid-column: 1/2;
+
+}
