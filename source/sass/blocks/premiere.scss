@@ -1,0 +1,74 @@
+.premiere__slide {
+  position: relative;
+}
+
+.premiere__img {
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+
+  img {
+    display: block;
+  }
+}
+
+.premiere__description {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  height: 472px;
+  max-height: 500px;
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
+  color: $white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+}
+
+.premiere__button {
+  width: 180px;
+  margin: 0 auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: $white;
+  background-color: $add_blue;
+  border: none;
+  padding: 20px;
+}
+
+.premiere .swiper-pagination-bullets {
+  display: flex;
+  column-gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.premiere__pagination .swiper-pagination-bullet {
+  border: 1px solid $white;
+  width: 16px;
+  height: 16px;
+}
+
+.premiere__pagination .swiper-pagination-bullet-active {
+  background-color: $white;
+}

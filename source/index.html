@@ -45,7 +45,73 @@
     </header>
     <main>
       <section class="hero" data-test="hero">
-        <h1>Захватывающие вершины Кавказа</h1>
+        <h1 class="visually-hidden">Туры по горам России на любой вкус.</h1>
+        <div class="hero__slides premiere swiper">
+          <!-- Additional required wrapper -->
+          <div class="premiere__wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="premiere__slide swiper-slide" tabindex="0">
+              <div class="premiere__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop1.webp 1x, img/desktop/hero-desktop1@2x.webp 2x">
+                  <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab1.webp 1x, img/tablet/hero-tab1@2x.webp 2x">
+                  <source type="images/webp" width="320" height="568" srcset="img/mobile/hero-mob1.webp 1x, img/mobile/hero-mob1@2x.webp 2x">
+                  <!-- JPG -->
+                  <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop1.jpg 1x, img/desktop/hero-desktop1@2x.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab1.jpg 1x, img/tablet/hero-tab1@2x.jpg 2x">
+                  <img width="320" height="568" src="img/mobile/hero-mob1.jpg" srcset="img/mobile/hero-mob1@2x.jpg" alt="Вершины Кавказа.">
+                </picture>
+              </div>
+              <div class="premiere__description">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие
+                  ландшафты и совершите восход на вершину горы Чегет.</p>
+                <button class="premiere__button">Смотреть тур</button>
+              </div>
+            </div>
+            <div class="premiere__slide swiper-slide" tabindex="0">
+              <div class="premiere__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop2.webp 1x, img/desktop/hero-desktop2@2x.webp 2x">
+                  <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab2.webp 1x, img/tablet/hero-tab2@2x.webp 2x">
+                  <source type="images/webp" width="320" height="568" srcset="img/mobile/hero-mob2.webp 1x, img/mobile/hero-mob2@2x.webp 2x">
+                  <!-- JPG -->
+                  <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop2.jpg 1x, img/desktop/hero-desktop2@2x.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab2.jpg 1x, img/tablet/hero-tab2@2x.jpg 2x">
+                  <img width="320" height="568" src="img/mobile/hero-mob2.jpg" srcset="img/mobile/hero-mob2@2x.jpg" alt="Природа Камчатки.">
+                </picture>
+              </div>
+              <div class="premiere__description">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в мире.</p>
+                <button class="premiere__button">Смотреть тур</button>
+              </div>
+            </div>
+            <div class="premiere__slide swiper-slide" tabindex="0">
+              <div class="premiere__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop3.webp 1x, img/desktop/hero-desktop3@2x.webp 2x">
+                  <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab3.webp 1x, img/tablet/hero-tab3@2x.webp 2x">
+                  <source type="images/webp" width="320" height="568" srcset="img/mobile/hero-mob3.webp 1x, img/mobile/hero-mob3@2x.webp 2x">
+                  <!-- JPG -->
+                  <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop3.jpg 1x, img/desktop/hero-desktop3@2x.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab3.jpg 1x, img/tablet/hero-tab3@2x.jpg 2x">
+                  <img width="320" height="568" src="img/mobile/hero-mob3.jpg" srcset="img/mobile/hero-mob3@2x.jpg"  alt="Горный Алтай.">
+                </picture>
+              </div>
+              <div class="premiere__description">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <button class="premiere__button">Смотреть тур</button>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="premiere__pagination swiper-pagination"></div>
+        </div>
       </section>
       <section class="tours" id="tours" data-test="tours">
         <h1>Захватывающие вершины Кавказа</h1>
