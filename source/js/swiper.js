@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
+const heroSwiper = new Swiper('.premiere', {
   modules: [Navigation, Pagination],
   // Optional parameters
   loop: true,
@@ -15,16 +15,14 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+  // when window width is >= 1440px
+    1440: {
+      pagination: {
+        clickable: true,
+      },
+    },
   },
 });
 
-//swiper.init();
+heroSwiper.init();

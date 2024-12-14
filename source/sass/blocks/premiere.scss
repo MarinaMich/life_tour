@@ -67,8 +67,89 @@
   border: 1px solid $white;
   width: 16px;
   height: 16px;
+  opacity: 1;
+  background-color: inherit;
 }
 
 .premiere__pagination .swiper-pagination-bullet-active {
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .premiere__slide--polaroid {
+    .premiere__description {
+      top: 37px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 163px;
+      top: 472px;
+      width: 266px;
+      height: 351px;
+      background-size: 266px 351px;
+      background-image: image-set(
+        "/img/tablet/polaroid1.webp" type("image/webp"),
+        "/img/tablet/polaroid1.png" type("image/png")
+      );
+
+      @media (min-resolution: 2dppx) {
+        background-image: image-set(
+          "/img/tablet/polaroid1@2x.webp" type("image/webp"),
+          "/img/tablet/polaroid1@2x.png" type("image/png")
+        );
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 369px;
+      top: 525px;
+      width: 236px;
+      height: 312px;
+      background-size: 236px 312px;
+      background-image: image-set(
+        "/img/tablet/polaroid2.webp" type("image/webp"),
+        "/img/tablet/polaroid2.png" type("image/png")
+      );
+
+      @media (min-resolution: 2dppx) {
+        background-image: image-set(
+          "/img/tablet/polaroid2@2x.webp" type("image/webp"),
+          "/img/tablet/polaroid2@2x.png" type("image/png")
+        );
+      }
+    }
+  }
+
+  .premiere__description {
+    top: 242px;
+    left: 45px;
+    height: 390px;
+    max-height: 400px;
+    width: 678px;
+    padding-top: 100px;
+
+    h2 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 56px;
+    }
+
+    p {
+      width: 500px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0 auto 35px;
+    }
+  }
+
+  .premiere .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+
 }

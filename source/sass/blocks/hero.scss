@@ -17,3 +17,15 @@
     z-index: 20;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .hero__slides {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slides {
+    width: 1440px;
+  }
+}
