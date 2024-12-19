@@ -52,8 +52,10 @@
     border-bottom: 1px solid $white;
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     border: 1px solid $white;
+    outline: none;
   }
 
   &:active {
