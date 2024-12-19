@@ -54,6 +54,28 @@
   background-color: $add_blue;
   border: none;
   padding: 20px;
+
+  &:hover {
+    outline: 1px solid $add_blue_button;
+    color: $add_blue_button;
+    background-color: $white;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $add_blue_button;
+    background-color: $white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $add_blue_button;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $disabled;
+  }
 }
 
 .premiere__details {
