@@ -50,7 +50,7 @@
           <!-- Additional required wrapper -->
           <div class="premiere__wrapper swiper-wrapper">
             <!-- Slides -->
-            <div class="premiere__slide swiper-slide" lazy="true" tabindex="0">
+            <div class="premiere__slide swiper-slide" lazy="true">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -74,7 +74,7 @@
                 </ul>
               </div>
             </div>
-            <div class="premiere__slide swiper-slide premiere__slide--polaroid" lazy="true" tabindex="0">
+            <div class="premiere__slide swiper-slide premiere__slide--polaroid" lazy="true">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -97,7 +97,7 @@
                 </ul>
               </div>
             </div>
-            <div class="premiere__slide swiper-slide" lazy="true" tabindex="0">
+            <div class="premiere__slide swiper-slide" lazy="true">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -125,8 +125,191 @@
           <div class="premiere__pagination swiper-pagination"></div>
         </div>
       </section>
-      <section class="tours" id="tours" data-test="tours">
-        <h1>Захватывающие вершины Кавказа</h1>
+      <section class="tours container" id="tours" data-test="tours">
+        <h2 class="tours__title title">Ближайшие туры
+          <span class="tours__shade" aria-hidden="true">Ближайшие туры</span>
+        </h2>
+        <div class="tours__slides swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="tours__slide tour swiper-slide">
+              <div class="tour__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" width="320" height="280" srcset="img/tours/tours-1.webp 1x, img/tours/tours-1@2x.webp 2x">
+                  <!-- JPG -->
+                  <img width="290" height="416" src="img/tours/tours-1.jpg" srcset="img/tours/tours-1@2x.jpg" alt="Вид на Эльбрус.">
+                </picture>
+              </div>
+              <div class="tour__description">
+                <ul class="tour__info">
+                  <li class="tour__place">Кавказ</li>
+                  <li class="tour__stats">
+                    <span class="tour__days">4 дня</span>
+                    <span class="tour__nigts">3 ночи</span>
+                  </li>
+                </ul>
+                <h3 class="tour__title">Путешествие
+                  вокруг Эльбруса</h3>
+                <dl class="tour__details">
+                  <div>
+                    <dt class="tour__detail">Сложность</dt>
+                    <dd class="tour__stars">
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star"></span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Даты набора</dt>
+                    <dd class="tour__time-frame">
+                      <time datetime="06-12/06-19">12.06–19.06</time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Группа</dt>
+                    <dd class="tour__group">до 15 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="tours__slide tour swiper-slide">
+              <div class="tour__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" width="320" height="280" srcset="img/tours/tours-2.webp 1x, img/tours/tours-2@2x.webp 2x">
+                  <!-- JPG -->
+                  <img width="290" height="416" src="img/tours/tours-2.jpg" srcset="img/tours/tours-2@2x.jpg" alt="Гора Белуха.">
+                </picture>
+              </div>
+              <div class="tour__description">
+                <ul class="tour__info">
+                  <li class="tour__place">Алтай</li>
+                  <li class="tour__stats">
+                    <span class="tour__days">14 дней</span>
+                    <span class="tour__nigts">13 ночей</span>
+                  </li>
+                </ul>
+                <h3 class="tour__title">Путь к подножию
+                  Белухи</h3>
+                <dl class="tour__details">
+                  <div>
+                    <dt class="tour__detail">Сложность:</dt>
+                    <dd class="tour__stars">
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star"></span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Даты набора:</dt>
+                    <dd class="tour__time-frame">
+                      <time datetime="06-12/06-19">14.06–23.06</time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Группа:</dt>
+                    <dd class="tour__group">до 25 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="tours__slide tour swiper-slide">
+              <div class="tour__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" width="320" height="280" srcset="img/tours/tours-3.webp 1x, img/tours/tours-3@2x.webp 2x">
+                  <!-- JPG -->
+                  <img width="290" height="416" src="img/tours/tours-3.jpg" srcset="img/tours/tours-3@2x.jpg" alt="Горы Адыгеи.">
+                </picture>
+              </div>
+              <div class="tour__description">
+                <ul class="tour__info">
+                  <li class="tour__place">Адыгея</li>
+                  <li class="tour__stats">
+                    <span class="tour__days">7 дней</span>
+                    <span class="tour__nigts">6 ночей</span>
+                  </li>
+                </ul>
+                <h3 class="tour__title">Через Фишт
+                  к Чёрному морю и обратно</h3>
+                <dl class="tour__details">
+                  <div>
+                    <dt class="tour__detail">Сложность:</dt>
+                    <dd class="tour__stars">
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star"></span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Даты набора:</dt>
+                    <dd class="tour__time-frame">
+                      <time datetime="06-12/06-19">15.07–19.07</time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Группа:</dt>
+                    <dd class="tour__group">до 22 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="tours__slide tour swiper-slide">
+              <div class="tour__img">
+                <picture>
+                  <!-- WebP -->
+                  <source type="images/webp" width="320" height="280" srcset="img/tours/tours-4.webp 1x, img/tours/tours-4@2x.webp 2x">
+                  <!-- JPG -->
+                  <img width="290" height="416" src="img/tours/tours-4.jpg" srcset="img/tours/tours-4@2x.jpg" alt="Красоты Урала.">
+                </picture>
+              </div>
+              <div class="tour__description">
+                <ul class="tour__info">
+                  <li class="tour__place">Урал</li>
+                  <li class="tour__stats">
+                    <span class="tour__days">9 дней</span>
+                    <span class="tour__nigts">10 ночей</span>
+                  </li>
+                </ul>
+                <h3 class="tour__title">Восхождение
+                  Манарага</h3>
+                <dl class="tour__details">
+                  <div>
+                    <dt class="tour__detail">Сложность:</dt>
+                    <dd class="tour__stars">
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star tour__star--activ"></span>
+                      <span class="tour__star"></span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Даты набора:</dt>
+                    <dd class="tour__time-frame">
+                      <time datetime="06-12/06-19">12.07–19.07</time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="tour__detail">Группа:</dt>
+                    <dd class="tour__group">до 7 чел.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="tours__button-prev swiper-button-prev"></div>
+          <div class="tours__button-next swiper-button-next"></div>
+        </div>
+        <a class="tours__link link" href="#">Показать все туры</a>
       </section>
       <section class="training" id="training" data-test="training">
         <h1>Захватывающие вершины Кавказа</h1>

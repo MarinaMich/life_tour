@@ -1,9 +1,6 @@
 // https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import {Navigation, Pagination, Keyboard} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 const heroSwiper = new Swiper('.premiere', {
   modules: [Navigation, Pagination, Keyboard],
@@ -64,4 +61,28 @@ heroSlider.addEventListener('keydown', (event) => {
   }
 });*/
 
+const tours = new Swiper('.tours__slides', {
+  modules: [Navigation, Keyboard],
+  loop: false,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.tours__button-prev',
+    prevEl: '.tours__button-next',
+  },
+});
+
 heroSwiper.init();
+tours.init();

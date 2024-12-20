@@ -1,0 +1,103 @@
+.tour {
+  position: relative;
+}
+
+.tour__img {
+  height: 416px;
+}
+
+.tour__description {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 12px;
+  line-height: 12px;
+  width: 250px;
+}
+
+.tour__info {
+  @include list-reset;
+  display: flex;
+  //justify-content: space-between;
+  column-gap: 5px;
+  row-gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.tour__place {
+  padding: 8px 12px 8px 34px;
+  background-color: $add_blue;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 12px;
+    background-image: url("/__spritemap#sprite-pin-view");
+    top: 8px;
+    left: 16px;
+  }
+}
+
+.tour__stats {
+  display: flex;
+  column-gap: 14px;
+  padding-top: 4px;
+}
+
+.tour__days {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 4px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("/__spritemap#sprite-sun-view");
+    top: 0;
+    left: 0;
+  }
+}
+
+.tour__nigts {
+  position: relative;
+  padding-left: 32px;
+  padding-top: 4px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("/__spritemap#sprite-moon-view");
+    top: 0;
+    left: 0;
+  }
+}
+
+.tour__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.tour__details {
+  display: flex;
+  column-gap: 13px;
+  margin: 0;
+
+  dd {
+    margin: 0;
+  }
+
+  dt::after {
+    content: ': ';
+  }
+}

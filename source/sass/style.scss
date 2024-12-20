@@ -1,5 +1,9 @@
 // Vendor
-// ---------------------------------
+
+// swiper
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 @import "vendor/normalize";
 @import "./common/fonts.scss";
@@ -14,3 +18,7 @@
 @import "./blocks/link.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/premiere.scss";
+@import "./blocks/tours.scss";
+@import "./blocks/tour.scss";
+
+
