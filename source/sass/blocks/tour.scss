@@ -13,7 +13,6 @@
   font-size: 12px;
   line-height: 12px;
   width: 250px;
-  padding-top: 224px;
 }
 
 .tour__info {
@@ -30,7 +29,7 @@
   padding: 8px 12px 8px 34px;
   background-color: $add_blue;
   position: relative;
-  min-width: 90px;
+
 
   &::before {
     position: absolute;
@@ -155,4 +154,28 @@
 
 .tour__group {
   min-width: 67px;
+}
+
+@media (min-width: $tablet-width) {
+  .tour__description {
+    width: 290px;
+  }
+
+  .tour__info {
+    column-gap: 0;
+    justify-content: space-between;
+  }
+
+  .tour__stats {
+    column-gap: 14px;
+  }
+
+  .tour__title {
+    padding-right: 30px;
+  }
+
+  .tour__details {
+    display: flex;
+    justify-content: space-between;
+  }
 }

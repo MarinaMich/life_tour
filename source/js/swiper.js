@@ -69,6 +69,12 @@ const tours = new Swiper('.tours__slides', {
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+      slideToClickedSlide: true,
     },
     // when window width is >= 1440px
     1440: {
@@ -79,8 +85,8 @@ const tours = new Swiper('.tours__slides', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.tours__button-prev',
-    prevEl: '.tours__button-next',
+    nextEl: '.tours__button-next',
+    prevEl: '.tours__button-prev',
   },
 });
 
