@@ -8,21 +8,21 @@
 
 .tour__description {
   position: absolute;
-  top: 0;
+  bottom: 29px;
   left: 20px;
   font-size: 12px;
   line-height: 12px;
   width: 250px;
+  padding-top: 224px;
 }
 
 .tour__info {
   @include list-reset;
   display: flex;
-  //justify-content: space-between;
   column-gap: 5px;
   row-gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
@@ -30,6 +30,7 @@
   padding: 8px 12px 8px 34px;
   background-color: $add_blue;
   position: relative;
+  min-width: 90px;
 
   &::before {
     position: absolute;
@@ -44,7 +45,7 @@
 
 .tour__stats {
   display: flex;
-  column-gap: 14px;
+  column-gap: 13px;
   padding-top: 4px;
 }
 
@@ -52,6 +53,7 @@
   position: relative;
   padding-left: 32px;
   padding-top: 4px;
+  min-width: 67px;
 
   &::before {
     position: absolute;
@@ -66,17 +68,18 @@
 
 .tour__nigts {
   position: relative;
-  padding-left: 32px;
+  padding-left: 33px;
   padding-top: 4px;
+  min-width: 73px;
 
   &::before {
     position: absolute;
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-image: url("/__spritemap#sprite-moon-view");
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 3px;
   }
 }
 
@@ -86,11 +89,24 @@
   font-weight: 700;
   line-height: 28px;
   text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: $white;
+    opacity: 0.2;
+  }
 }
 
 .tour__details {
   display: flex;
-  column-gap: 13px;
+  column-gap: 8px;
   margin: 0;
 
   dd {
@@ -100,4 +116,43 @@
   dt::after {
     content: ': ';
   }
+}
+
+.tour__detail {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.tour__stars {
+  display: flex;
+  column-gap: 1px;
+}
+
+.tour__star {
+  display: block;
+  background-image: url("/__spritemap#sprite-star-view");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+
+  &--activ {
+    background-image: url("/__spritemap#sprite-star-activ-view");
+  }
+}
+
+.tour__time-frame,
+.tour__group {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: left;
+  padding-top: 2px;
+}
+
+.tour__time-frame {
+  min-width: 83px;
+}
+
+.tour__group {
+  min-width: 67px;
 }
