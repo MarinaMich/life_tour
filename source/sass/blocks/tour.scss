@@ -179,3 +179,18 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tour__description {
+    width: 340px;
+  }
+
+  .tour__title {
+    padding-right: 70px;
+  }
+
+  .tour__description {
+    position: absolute;
+    bottom: 30px;
+  }
+}
