@@ -43,15 +43,24 @@
   margin: 0 auto;
   position: relative;
 
-  &::after {
+  svg {
     position: absolute;
-    content: '';
     width: 9px;
     height: 14px;
-    background-image: url("/__spritemap#sprite-right-view");
-    background-repeat: no-repeat;
     top: 10px;
     right: 8px;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: rgba(2, 102, 193, 1);
+  }
+
+  &:active {
+    color: $add_blue_button;
   }
 }
 
@@ -120,6 +129,28 @@
     padding: 13px 11px;
     background-color: $add_blue;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      outline: 1px solid #1C3374;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:focus {
+      background-color: $white;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:active {
+      background-color: $add_blue_button;
+      svg {
+        color: $white;
+      }
+    }
   }
 
   .tours__button-prev.swiper-button-disabled,

@@ -5,6 +5,7 @@ import {Navigation, Pagination, Keyboard} from 'swiper/modules';
 const heroSwiper = new Swiper('.premiere', {
   modules: [Navigation, Pagination, Keyboard],
   loop: true,
+  grabCursor: true,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -64,6 +65,7 @@ heroSlider.addEventListener('keydown', (event) => {
 const tours = new Swiper('.tours__slides', {
   modules: [Navigation, Keyboard],
   loop: false,
+  grabCursor: true,
   breakpoints: {
     // when window width is >= 768px
     768: {
