@@ -43,8 +43,30 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(45, 56, 63, 0.3);
+  color: $dark_main;
+  outline: 1px solid rgba(45, 56, 63, 0.3);
   text-align: center;
   top: 0;
   right: 0;
+  padding-top: 2px;
+
+  &:hover {
+    outline-color: $dark_main;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $add_blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    outline: none;
+    outline: 1px solid rgba(45, 56, 63, 1);
+    opacity: 0.3;
+  }
 }

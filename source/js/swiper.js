@@ -115,6 +115,7 @@ const trainers = new Swiper('.training__slides', {
     },
     // when window width is >= 1440px
     1440: {
+      initialSlide: 0,
       slidesPerView: 4,
     },
   },
