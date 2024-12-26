@@ -8,17 +8,10 @@
 }
 
 .tours__title {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 22px;
-  text-align: left;
   padding-top: 19px;
   padding-bottom: 14px;
-  margin: 0;
-  position: relative;
 }
-
+/*
 .tours__shade {
   font-size: 26px;
   font-weight: 800;
@@ -28,7 +21,7 @@
   top: 2px;
   left: 0;
   opacity: 0.03;
-}
+}*/
 
 .tours__link {
   @include link-edit;
@@ -94,7 +87,7 @@
   .tours__wrapper {
     position: relative;
   }
-
+/*
   .tours__title {
     font-size: 25px;
     line-height: 25px;
@@ -106,7 +99,7 @@
   .tours__shade {
     font-size: 40px;
     line-height: 40px;
-  }
+  }*/
 
   .tours__slides {
     width: 678px;
@@ -207,7 +200,7 @@
     padding-bottom: 100px;
     row-gap: 53px;
   }
-
+/*
   .tours__title {
     font-size: 35px;
     line-height: 35px;
@@ -218,7 +211,7 @@
   .tours__shade {
     font-size: 55px;
     line-height: 55px;
-  }
+  }*/
 
   .tours__slides {
     width: 1200px;

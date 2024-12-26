@@ -61,6 +61,7 @@ heroSlider.addEventListener('keydown', (event) => {
     paginationBullets.forEach((bullet) => bullet[index].focus());
   }
 });*/
+// Слайдер с вариантами туров по горам
 
 const tours = new Swiper('.tours__slides', {
   modules: [Navigation, Keyboard],
@@ -92,5 +93,39 @@ const tours = new Swiper('.tours__slides', {
   },
 });
 
+// Слайдер с информацией о тренерах
+
+const trainers = new Swiper('.training__slides', {
+  modules: [Navigation, Keyboard],
+  loop: false,
+  grabCursor: true,
+  initialSlide: 2,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      initialSlide: 0,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+      slideToClickedSlide: true,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 4,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.training__button-next',
+    prevEl: '.training__button-prev',
+  },
+});
+
 heroSwiper.init();
 tours.init();
+trainers.init();

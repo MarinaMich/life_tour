@@ -1,0 +1,51 @@
+.title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin: 0;
+  position: relative;
+}
+
+.title__shade {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  opacity: 0.03;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 25px;
+    line-height: 25px;
+    width: 542px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .title__shade {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 35px;
+    line-height: 35px;
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+
+  .title__shade {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

@@ -1,0 +1,36 @@
+.training {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+
+.training__title {
+  //padding-top: 19px;
+  //padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.training__subtitle {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.training__slide {
+  width: 290px;
+}
+
+.training__button-prev,
+.training__button-next {
+  display: none;
+}
