@@ -70,3 +70,29 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .trainer {
+    height: 388px;
+  }
+
+  .trainer__description {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trainer {
+    height: 356px;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .trainer__img {
+    img {
+      width: 255px;
+    }
+  }
+}
