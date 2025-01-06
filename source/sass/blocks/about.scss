@@ -1,0 +1,32 @@
+.about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about__img {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin: 0;
+  position: relative;
+}
+
+.about span {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  opacity: 0.03;
+}
