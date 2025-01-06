@@ -6,6 +6,11 @@
 .about__img {
   margin-left: -15px;
   margin-right: -15px;
+  text-align: center;
+}
+
+.about__img img {
+  object-fit: cover;
 }
 
 .about h2 {
