@@ -117,6 +117,7 @@ const trainers = new Swiper('.training__slides', {
     1440: {
       initialSlide: 0,
       slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 

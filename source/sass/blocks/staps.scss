@@ -1,0 +1,183 @@
+.staps__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.staps__list {
+  @include list-reset;
+  padding-left: 29px;
+  padding-right: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(100% - 23px);
+    background-color: $add_blue;
+    top: 11px;
+    left: 6px;
+  }
+}
+
+.staps__item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  position: relative;
+  padding-left: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $add_blue;
+    top: 30%;
+    left: -29px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.staps__item--map {
+  &::after {
+    background-image: url("/__spritemap#sprite-map-icon-view");
+  }
+}
+
+.staps__item--boots {
+  &::after {
+    background-image: url("/__spritemap#sprite-boots-view");
+  }
+}
+
+.staps__item--tree {
+  &::after {
+    background-image: url("/__spritemap#sprite-pine-tree-view");
+  }
+}
+
+.staps__item--mountain {
+  &::after {
+    background-image: url("/__spritemap#sprite-mountain-view");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .staps__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 100px;
+    padding-top: 2px;
+  }
+
+  .staps__list {
+    padding: 0;
+    padding-bottom: 2px;
+    display: grid;
+    column-gap: 134px;
+    row-gap: 104px;
+    grid-template-areas:
+      "map mountain"
+      "boots tree";
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .staps__item {
+    font-size: 14px;
+    line-height: 22px;
+
+    &::after {
+      top: 2px;
+    }
+  }
+
+  .staps__item--map {
+    grid-area: map;
+  }
+
+  .staps__item--boots {
+    grid-area: boots;
+  }
+
+  .staps__item--tree {
+    grid-area: tree;
+  }
+
+  .staps__item--mountain {
+    grid-area: mountain;
+  }
+
+  .staps__item {
+    width: 232px;
+    &::before {
+      content: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .staps__title {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 28px;
+  }
+
+  .staps__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+    &::after {
+      content: "";
+      left: 20px;
+      top: calc(100% + 6px);
+      width: calc(100% - 20px);
+      height: 2px;
+    }
+  }
+  .staps__item {
+    width: 253px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 45px;
+    padding-right: 10px;
+
+    &::before {
+      content: "";
+      top: 103%;
+      left: 20px;
+    }
+
+    &::after {
+      left: 10px;
+    }
+  }
+
+  .staps__item--tree {
+    &::before {
+      left: 0;
+    }
+  }
+}
