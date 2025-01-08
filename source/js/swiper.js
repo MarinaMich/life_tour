@@ -134,6 +134,7 @@ const reviews = new Swiper('.reviews__slides', {
   modules: [Navigation, Keyboard],
   loop: false,
   grabCursor: true,
+  //spaceBetween: 30,
   breakpoints: {
     // when window width is >= 768px
     768: {

@@ -2,3 +2,64 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.reviews__title {
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin-bottom: 15px;
+}
+
+.reviews__slides {
+  width: 290px;
+  //border: 1px solid $white;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+}
+
+.reviews__slide {
+  padding: 20px;
+  height: 484px;
+  width: 290px;
+}
+
+.review__img {
+  margin-bottom: 20px;
+}
+
+.review__img img {
+  display: block;
+  max-width: none;
+}
+
+.review__description p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.review__description p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.review__name {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.review__data {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  display: block;
+}
+
+.reviews__button-prev,
+.reviews__button-next {
+  display: none;
+}
