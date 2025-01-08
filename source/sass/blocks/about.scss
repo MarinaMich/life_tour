@@ -20,7 +20,7 @@
   font-weight: 800;
   line-height: 22px;
   text-align: left;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-bottom: 17px;
   margin: 0;
   margin-bottom: 17px;
@@ -43,12 +43,17 @@
 }
 
 .about__content h3 {
-  font-family: Montserrat;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
   text-align: left;
-  margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.about__content p {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,13 +76,15 @@
 
   .about__content {
     width: 270px;
-    margin-left: 60%;
+    margin-left: 59.7%;
   }
 
   .about__content h2 {
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   .about__content span {
@@ -86,7 +93,7 @@
   }
 
   .about__content div {
-    margin-top: 36px;
+    margin-top: 25px;
   }
 
   .about__content h3 {
@@ -97,5 +104,52 @@
   .about__content p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about__img {
+    width: 660px;
+    top: 100px;
+  }
+
+  .about__content {
+    width: 660px;
+    margin-left: 540px;
+  }
+
+  .about__content div {
+    width: 585px;
+    margin-top: 25px;
+  }
+
+  .about__content h2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 57px;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
+  .about__content span {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .about__content h3 {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .about__content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
   }
 }
