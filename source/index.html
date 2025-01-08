@@ -487,8 +487,89 @@
           </div>
         </div>
       </section>
-      <section class="reviews" id="reviews" data-test="reviews">
-        <h1>Захватывающие вершины Кавказа</h1>
+      <section class="reviews container" id="reviews" data-test="reviews">
+        <h2 class="reviews__title title">Отзывы
+          <span class="reviews__shade title__shade" aria-hidden="true">Отзывы</span>
+        </h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__slides swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="reviews__slide review swiper-slide" tabindex="0">
+                <div class="review__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" width="250" height="169" srcset="img/trainers/trainer-1.webp 1x, img/trainers/trainer-1@2x.webp 2x">
+                    <!-- JPG -->
+                    <img width="250" height="169" src="img/trainers/trainer-1.jpg" srcset="img/trainers/trainer-1@2x.jpg" alt="Фото тренера Александра
+                    Прокофьева.">
+                  </picture>
+                </div>
+                <div class="review__description">
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <h3 class="review__name">Александр Прокофьев</h3>
+                  <span class="review__data"></span>
+                </div>
+              </div>
+              <div class="reviews__slide review swiper-slide" tabindex="0">
+                <div class="trainer__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" width="260" height="200" srcset="img/trainers/trainer-2.webp 1x, img/trainers/trainer-2@2x.webp 2x">
+                    <!-- JPG -->
+                    <img width="260" height="200" src="img/trainers/trainer-2.jpg" srcset="img/trainers/trainer-2@2x.jpg" alt="Фото тренера Светланы Афиногеновой.">
+                  </picture>
+                </div>
+                <div class="review__description">
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <h3 class="review__name">Александр Прокофьев</h3>
+                  <span class="review__data"></span>
+                </div>
+              </div>
+              <div class="reviews__slide review swiper-slide" tabindex="0">
+                <div class="trainer__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" width="260" height="200" srcset="img/trainers/trainer-3.webp 1x, img/trainers/trainer-3@2x.webp 2x">
+                    <!-- JPG -->
+                    <img width="260" height="200" src="img/trainers/trainer-3.jpg" srcset="img/trainers/trainer-3@2x.jpg" alt="Фото тренера Надежды Колесниченко.">
+                  </picture>
+                </div>
+                <div class="review__description">
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <h3 class="review__name">Александр Прокофьев</h3>
+                  <span class="review__data"></span>
+                </div>
+              </div>
+              <div class="reviews_slide review swiper-slide" tabindex="0">
+                <div class="trainer__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" width="260" height="200" srcset="img/trainers/trainer-4.webp 1x, img/trainers/trainer-4@2x.webp 2x">
+                    <!-- JPG -->
+                    <img width="260" height="200" src="img/trainers/trainer-4.jpg" srcset="img/trainers/trainer-4@2x.jpg" alt="Фото тренера Федора Кайгородова.">
+                  </picture>
+                </div>
+                <div class="review__description">
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <h3 class="review__name">Александр Прокофьев</h3>
+                  <span class="review__data"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="reviews__button-prev swiper-button-prev" tabindex="0">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </div>
+          <div class="reviews__button-next swiper-button-next" tabindex="0">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </div>
+        </div>
       </section>
       <section class="adv" data-test="adv">
         <h1>Захватывающие вершины Кавказа</h1>

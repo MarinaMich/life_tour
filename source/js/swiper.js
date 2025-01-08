@@ -128,6 +128,39 @@ const trainers = new Swiper('.training__slides', {
   },
 });
 
+// Слайдер с отзывами
+
+const reviews = new Swiper('.reviews__slides', {
+  modules: [Navigation, Keyboard],
+  loop: false,
+  grabCursor: true,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+      slideToClickedSlide: true,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+});
+
 heroSwiper.init();
 tours.init();
 trainers.init();
+reviews.init();
