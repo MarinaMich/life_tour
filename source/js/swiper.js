@@ -163,7 +163,25 @@ const reviews = new Swiper('.reviews__slides', {
   },
 });
 
+let slides;
+
+const changeAdv = () => {
+  if (window.innerWidth >= 1440) {
+
+    slides = new Swiper('.adv__slides', {
+      spaceBetween: 10,
+    });
+
+  }
+  if (window.innerWidth < 1440) {
+    slides.destroy();
+  }
+};
+
+
 heroSwiper.init();
 tours.init();
 trainers.init();
 reviews.init();
+changeAdv();
+//window.addEventListener('resize', () => changeAdv());
