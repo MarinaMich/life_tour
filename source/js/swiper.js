@@ -133,13 +133,14 @@ const trainers = new Swiper('.training__slides', {
 const reviews = new Swiper('.reviews__slides', {
   modules: [Navigation, Keyboard],
   loop: false,
+  autoHeight: true,
   grabCursor: true,
-  //spaceBetween: 30,
   breakpoints: {
     // when window width is >= 768px
     768: {
-      slidesPerView: 1.5,
-      spaceBetween: 20,
+      autoHeight: false,
+      slidesPerView: 1.232,
+      spaceBetween: 30,
       keyboard: {
         enabled: true,
         onlyInViewport: true,
@@ -149,8 +150,9 @@ const reviews = new Swiper('.reviews__slides', {
     },
     // when window width is >= 1440px
     1440: {
-      slidesPerView: 1.5,
-      spaceBetween: 20,
+      autoHeight: false,
+      slidesPerView: 1.72,
+      spaceBetween: 120,
     },
   },
 
