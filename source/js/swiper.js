@@ -184,4 +184,4 @@ tours.init();
 trainers.init();
 reviews.init();
 changeAdv();
-//window.addEventListener('resize', () => changeAdv());
+window.addEventListener('resize', () => changeAdv());
