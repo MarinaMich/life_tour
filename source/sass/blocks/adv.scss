@@ -9,7 +9,8 @@
 }
 
 .adv__shade {
-  left: 12%;
+  text-align: center;
+  width: 100%;
 }
 
 .adv__wrapper {
@@ -94,4 +95,16 @@
 .adv__button-prev,
 .adv__button-next {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .adv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .adv__title {
+    width: auto;
+  }
+
 }
