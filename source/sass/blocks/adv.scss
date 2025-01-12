@@ -106,6 +106,49 @@
 
   .adv__title {
     width: auto;
+    margin-bottom: 50px;
   }
 
+  .adv__wrapper {
+    width: 678px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  .adv__slide {
+    width: 324px;
+    min-height: 340px;
+    padding: 30px 20px;
+
+    &:nth-child(2n + 1):last-child {
+      grid-column: span 2;
+      margin: 0 auto;
+    }
+
+    &::before {
+      width: 48px;
+      height: 48px;
+      left: 138px;
+      background-position: 12px 12px;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 16px;
+      margin-top: 73px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
 }
