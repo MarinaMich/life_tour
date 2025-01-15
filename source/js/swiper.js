@@ -169,7 +169,18 @@ const changeAdv = () => {
   if (window.innerWidth >= 1440) {
 
     slides = new Swiper('.adv__slides', {
-      spaceBetween: 10,
+      modules: [Navigation],
+      spaceBetween: 30,
+      initialSlide: 1,
+      loop: true,
+      slidesPerGroup: 2,
+      slidesPerView: 'auto',
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.adv__button-next',
+        prevEl: '.adv__button-prev',
+      },
     });
 
   }

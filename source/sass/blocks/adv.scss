@@ -32,7 +32,7 @@
     content: "";
     width: 42px;
     height: 42px;
-    border: 1px solid $add_blue;
+    outline: 1px solid $add_blue;
     left: 124px;
     background-size: 24px 24px;
     background-repeat: no-repeat;
@@ -60,6 +60,10 @@
 
   p:not(:last-of-type) {
     margin-bottom: 10px;
+  }
+
+  &--desktop {
+    display: none;
   }
 }
 
@@ -106,7 +110,7 @@
 
   .adv__title {
     width: auto;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .adv__wrapper {
@@ -121,34 +125,162 @@
 
   .adv__slide {
     width: 324px;
+    height: auto;
     min-height: 340px;
-    padding: 30px 20px;
+    padding: 30px 20px 28px;
 
     &:nth-child(2n + 1):last-child {
       grid-column: span 2;
       margin: 0 auto;
+
+      h3 {
+        padding-right: 2px;
+      }
     }
 
     &::before {
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
       left: 138px;
-      background-position: 12px 12px;
+      background-position: 10px 10px;
     }
 
     h3 {
       font-size: 16px;
       line-height: 16px;
       margin-top: 73px;
+      padding: 0;
+      margin-bottom: 14px;
     }
 
     p {
       font-size: 14px;
       line-height: 22px;
+      width: 284px;
     }
 
     p:not(:last-of-type) {
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adv {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  .adv__title {
+    padding-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  .adv__slides {
+    width: 100vw;
+    margin-left: -120px;
+  }
+
+  .adv__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 1440px;
+    margin-left: -290px;
+  }
+
+  .adv__slide {
+    width: 380px;
+    min-height: 329px;
+    max-height: 332px;
+    padding: 40px 20px 38px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &--desktop {
+      display: block;
+    }
+
+    &::before {
+      width: 54px;
+      height: 54px;
+      left: 163px;
+      background-position: 15px 15px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 83px;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    p {
+      width: 340px;
+    }
+  }
+
+  .adv__button-prev,
+  .adv__button-next {
+    display: block;
+    top: 621px;
+    width: 37px;
+    height: 35px;
+    padding: 13px 11px;
+    background-color: $add_blue;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      outline: 1px solid #1C3374;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:focus {
+      background-color: $white;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:active {
+      background-color: $add_blue_button;
+      svg {
+        color: $white;
+      }
+    }
+  }
+
+  .adv__button-prev {
+    left: 47.29%;
+
+    svg {
+      width: 14px;
+      height: 9px;
+      margin-bottom: 13px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .adv__button-next {
+    right: 47.29%;
+
+    svg {
+      width: 14px;
+      height: 9px;
+      margin-bottom: 13px;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      content: none;
     }
   }
 }

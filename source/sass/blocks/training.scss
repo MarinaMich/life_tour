@@ -97,6 +97,28 @@
     padding: 13px 11px;
     background-color: $add_blue;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      outline: 1px solid #1C3374;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:focus {
+      background-color: $white;
+      svg {
+        color: $add_blue_button;
+      }
+    }
+
+    &:active {
+      background-color: $add_blue_button;
+      svg {
+        color: $white;
+      }
+    }
   }
 
   .training__button-prev {

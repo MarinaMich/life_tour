@@ -11,17 +11,6 @@
   padding-top: 19px;
   padding-bottom: 14px;
 }
-/*
-.tours__shade {
-  font-size: 26px;
-  font-weight: 800;
-  line-height: 26px;
-  text-align: left;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  opacity: 0.03;
-}*/
 
 .tours__link {
   @include link-edit;
@@ -91,11 +80,6 @@
   .tours__title {
     padding-bottom: 11px;
   }
-/*
-  .tours__shade {
-    font-size: 40px;
-    line-height: 40px;
-  }*/
 
   .tours__slides {
     width: 678px;
