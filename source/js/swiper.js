@@ -163,6 +163,8 @@ const reviews = new Swiper('.reviews__slides', {
   },
 });
 
+// слайдер преимуществ
+
 let slides;
 
 const changeAdv = () => {
@@ -189,6 +191,20 @@ const changeAdv = () => {
   }
 };
 
+// галерея
+
+const gallery = new Swiper ('.gallery__slides', {
+  modules: [Navigation],
+  spaceBetween: 5,
+  loop: true,
+  slidesPerView: 2,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.adv__button-next',
+    prevEl: '.adv__button-prev',
+  },
+});
 
 heroSwiper.init();
 tours.init();
@@ -196,3 +212,4 @@ trainers.init();
 reviews.init();
 changeAdv();
 window.addEventListener('resize', () => changeAdv());
+gallery.init();

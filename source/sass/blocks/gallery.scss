@@ -5,6 +5,8 @@
 
 .gallery__title {
   margin-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 }
 
 .gallery__text {
@@ -17,4 +19,46 @@
     text-align: left;
     margin: 0;
   }
+}
+
+.gallery__wrapper {
+  width: 320px;
+}
+
+.gallery__slide {
+  width: auto;
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gallery__img {
+
+  img {
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.gallery__img--high {
+  width: 158px;
+
+  img {
+    height: 266px;
+  }
+}
+
+.gallery__img--low {
+  width: 157px;
+
+  img {
+    max-height: 135px;
+    min-height: 125px;
+  }
+}
+
+.gallery__button-prev,
+.gallery__button-next {
+  display: none;
 }
