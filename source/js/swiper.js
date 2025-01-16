@@ -174,9 +174,16 @@ const changeAdv = () => {
       modules: [Navigation],
       spaceBetween: 30,
       initialSlide: 1,
+      grabCursor: true,
       loop: true,
       slidesPerGroup: 2,
       slidesPerView: 'auto',
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+      slideToClickedSlide: true,
 
       // Navigation arrows
       navigation: {
@@ -198,11 +205,23 @@ const gallery = new Swiper ('.gallery__slides', {
   spaceBetween: 5,
   loop: true,
   slidesPerView: 2,
-
+  grabCursor: true,
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+        slideToClickedSlide: true,
+      },
+    },
+  },
   // Navigation arrows
   navigation: {
-    nextEl: '.adv__button-next',
-    prevEl: '.adv__button-prev',
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
   },
 });
 
