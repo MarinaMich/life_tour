@@ -182,7 +182,7 @@
   }
 
   .gallery__slides {
-    width: 100vw;
+    width: 1440px;
   }
 
   .gallery__wrapper {
@@ -199,6 +199,7 @@
 
   .gallery__img--high {
     width: 100%;
+    cursor: pointer;
 
     img {
       height: 463px;
@@ -207,6 +208,7 @@
 
   .gallery__img--low {
     width: 100%;
+    cursor: pointer;
 
     img {
       max-height: 233px;
