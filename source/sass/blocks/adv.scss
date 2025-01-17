@@ -106,7 +106,7 @@
 
   .adv__title {
     width: auto;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .adv__wrapper {
@@ -138,7 +138,7 @@
       width: 46px;
       height: 46px;
       left: 138px;
-      background-position: 10px 10px;
+      background-position: 11px 11px;
     }
 
     h3 {
@@ -153,6 +153,7 @@
       font-size: 14px;
       line-height: 22px;
       width: 284px;
+      margin-left: -1px;
     }
 
     p:not(:last-of-type) {
@@ -211,6 +212,7 @@
 
     p {
       width: 340px;
+      margin-left: 0;
     }
   }
 
