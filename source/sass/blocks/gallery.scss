@@ -21,6 +21,10 @@
   }
 }
 
+.gallery__slides {
+  width: 320px;
+}
+
 .gallery__wrapper {
   width: 320px;
 }
@@ -83,6 +87,10 @@
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+
+  .gallery__slides {
+    width: 768px;
   }
 
   .gallery__wrapper {
@@ -151,3 +159,5 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {}

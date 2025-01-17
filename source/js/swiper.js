@@ -232,3 +232,6 @@ reviews.init();
 changeAdv();
 window.addEventListener('resize', () => changeAdv());
 gallery.init();
+if(window.innerWidth >= 1440) {
+  gallery.destroy();
+}

@@ -61,10 +61,6 @@
   p:not(:last-of-type) {
     margin-bottom: 10px;
   }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .adv__slide--shield {
@@ -197,10 +193,6 @@
     padding: 40px 20px 38px;
     overflow-y: auto;
     overflow-x: hidden;
-
-    &--desktop {
-      display: block;
-    }
 
     &::before {
       width: 54px;
