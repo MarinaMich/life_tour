@@ -203,6 +203,7 @@
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 760px;
+    padding-top: 292.5px;
   }
 
   .form__wrapper {
@@ -212,6 +213,7 @@
     h2 {
       font-size: 35px;
       line-height: 35px;
+      margin-bottom: 20px;
     }
 
     p {
@@ -224,7 +226,7 @@
     flex-direction: row;
     column-gap: 30px;
     height: 56px;
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
   .form__box {
@@ -243,5 +245,6 @@
   .form__button {
     width: 180px;
     height: 56px;
+    padding: 20px;
   }
 }
