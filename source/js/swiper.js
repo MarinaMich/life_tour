@@ -167,7 +167,7 @@ const reviews = new Swiper('.reviews__slides', {
 
 let slides;
 
-const changeAdv = () => {
+const onChangeAdv = () => {
   if (window.innerWidth >= 1440) {
 
     slides = new Swiper('.adv__slides', {
@@ -191,10 +191,10 @@ const changeAdv = () => {
         prevEl: '.adv__button-prev',
       },
     });
-
   }
   if (window.innerWidth < 1440) {
-    slides.destroy();
+    slides.destroy(true, true);
+    slides = null;
   }
 };
 
@@ -207,9 +207,10 @@ const gallery = new Swiper ('.gallery__slides', {
   slidesPerView: 2,
   grabCursor: true,
   breakpoints: {
-    // when window width is >= 768px
+  // when window width is >= 768px
     768: {
       slidesPerView: 3,
+      spaceBetween: 5,
       keyboard: {
         enabled: true,
         onlyInViewport: true,
@@ -225,12 +226,15 @@ const gallery = new Swiper ('.gallery__slides', {
   },
 });
 
+if(window.innerWidth >= 1440) {
+  gallery.destroy();
+}
+
 heroSwiper.init();
 tours.init();
 trainers.init();
 reviews.init();
-changeAdv();
+onChangeAdv();
+window.addEventListener('resize', onChangeAdv);
 gallery.init();
-if(window.innerWidth >= 1440) {
-  gallery.destroy();
-}
+window.addEventListener('resize', gallery.init());
