@@ -4,30 +4,39 @@
     url("../../img/mobile/form_mobile@2x.webp") type("image/webp") 2x,
     url("../../img/mobile/form_mobile.jpg") type("image/png") 1x,
     url("../../img/mobile/form_mobile@2x.ipg") type("image/png") 2x)
-    top 0 left 0 no-repeat;
+    top 0 left -35px no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
   min-height: 638px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form__wrapper {
   margin: 0 auto;
   width: 258px;
-  padding: 174px 0;
 
   h2 {
     margin: 0;
     color: $white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
   }
 
   p {
-    margin: 0;
+    margin: 0 auto;
     color: $white;
     text-align: center;
-    width: 255px;
-    margin-bottom: 20px;
+    width: 220px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -40,6 +49,7 @@
   font-weight: 400;
   line-height: 16px;
   text-align: left;
+  margin-top: 20px;
 }
 
 .form__box {
@@ -53,7 +63,7 @@
   z-index: 2;
   background-color: $white;
   height: 50px;
-  padding: 17px 15px;
+  padding: 18px 15px 16px;
   width: 100%;
   left: 0;
   border-radius: 2px;
@@ -62,7 +72,6 @@
   &:hover {
     outline: 1px solid $add_blue;
   }
-
 }
 
 .form__input {
@@ -93,6 +102,8 @@
 
 .form__button {
   height: 58px;
+  padding-top: 8px;
+  font-weight: 500;
   background-color: $add_blue;
   color: $white;
   border: none;
@@ -133,8 +144,77 @@
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 680px;
   }
+
+  .form__wrapper {
+    width: 360px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      width: 320px;
+    }
+  }
+
+  .form__form {
+    margin-top: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    background: image-set(
+      url("../../img/desktop/form_desktop.webp") type("image/webp") 1x,
+      url("../../img/desktop/form_desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/desktop/form_desktop.jpg") type("image/png") 1x,
+      url("../../img/desktop/form_desktop@2x.ipg") type("image/png") 2x)
+      top 0 left 0 no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 760px;
+  }
 
+  .form__wrapper {
+    width: 960px;
+    padding: 0;
+
+    h2 {
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .form__form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    height: 56px;
+    margin-top: 25px;
+  }
+
+  .form__box {
+    width: 360px;
+    height: 56px;
+  }
+
+  .form__label {
+    height: 56px;
+  }
+
+  .form__input {
+    height: 56px;
+  }
+
+  .form__button {
+    width: 180px;
+    height: 56px;
+  }
 }
