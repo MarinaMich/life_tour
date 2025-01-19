@@ -1,0 +1,21 @@
+.footer__contacts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1000vw;
+    height: 1px;
+    background-color: $dark_main;
+    bottom: 0;
+    opacity: 0.2;
+    left: -100%;
+  }
+}
+
+.footer__main {
+  padding-top: 23px;
+  padding-bottom: 20px;
+}

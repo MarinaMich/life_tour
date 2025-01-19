@@ -768,9 +768,48 @@
         </div>
       </section>
     </main>
-    <footer class="footer" data-test="footer">
-      <section class="footer__contacts" id="contacts"></section>
-      <section class="footer__main"></section>
+    <footer class="footer container" data-test="footer">
+      <section class="footer__contacts contacts" id="contacts">
+        <div class="contacts__text">
+          <h2 class="contacts__title title">Контакты
+            <span class="contacts__shade title__shade" aria-hidden="true">Контакты</span>
+          </h2>
+          <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        </div>
+        <ul class="contacts__data">
+          <li class="contacts__item contacts__item--phone">
+            <h3 class="contacts__name">Телефон</h3>
+            <a class="contacts__info contacts__info--phone link" href="tel:+7(983)745-45-45">+7 983 745-45-45</a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <h3 class="contacts__name">Email</h3>
+            <a class="contacts__info contacts__info--email link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+          </li>
+          <li class="contacts__item contacts__item--address">
+            <h3 class="contacts__name">Адрес</h3>
+            <p class="contacts__info contacts__info--address">г. Москва, пр-т Мира, д. 14, офис 101</p>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <picture>
+            <!-- WebP -->
+            <source type="images/webp" media="(min-width: 1440px)" width="600" height="324" srcset="img/desktop/map-desk.webp 1x, img/desktop/map-desk@2x.webp 2x">
+            <source type="images/webp" media="(min-width: 768px)" width="768" height="340" srcset="img/tablet/map-tab.webp 1x, img/tablet/map-tab@2x.webp 2x">
+            <source type="images/webp" width="320" height="343" srcset="img/mobile/map-mob.webp 1x, img/mobile/map-mob@2x.webp 2x">
+            <!-- JPG -->
+            <source type="image/png" media="(min-width: 1440px)" width="600" height="324" srcset="img/desktop/map-desk.jpg 1x, img/desktop/map-desk@2x.jpg 2x">
+            <source type="image/png" media="(min-width: 768px)" width="768" height="340" srcset="img/tablet/map-tab.jpg 1x, img/tablet/map-tab@2x.jpg 2x">
+            <img width="320" height="343" src="img/mobile/map-mob.jpg" srcset="img/mobile/map-mob@2x.jpg" alt="Карта с местом расположения офиса.">
+          </picture>
+        </div>
+      </section>
+      <section class="footer__main">
+        <a class="footer__logo" href="#">
+          <picture>
+            <img src="img/logo-dark.svg" width="142" height="42" alt="Логотип туристической организации.">
+          </picture>
+        </a>
+      </section>
     </footer>
 
 <!--

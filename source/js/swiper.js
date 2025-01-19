@@ -165,13 +165,13 @@ const reviews = new Swiper('.reviews__slides', {
 
 // слайдер преимуществ
 
-let slides;
-
-const onChangeAdv = () => {
-  if (window.innerWidth >= 1440) {
-
-    slides = new Swiper('.adv__slides', {
-      modules: [Navigation],
+const advSlides = new Swiper('.adv__slides', {
+  modules: [Navigation],
+  enabled: false,
+  slidesPerView: 'auto',
+  breakpoints: {
+    1440: {
+      enabled: true,
       spaceBetween: 30,
       initialSlide: 1,
       grabCursor: true,
@@ -184,32 +184,29 @@ const onChangeAdv = () => {
         pageUpDown: true,
       },
       slideToClickedSlide: true,
+    }
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.adv__button-next',
+    prevEl: '.adv__button-prev',
+  },
+});
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.adv__button-next',
-        prevEl: '.adv__button-prev',
-      },
-    });
-  }
-  if (window.innerWidth < 1440) {
-    slides.destroy(true, true);
-    slides = null;
-  }
-};
 
 // галерея
 
 const gallery = new Swiper ('.gallery__slides', {
   modules: [Navigation],
+  enabled: true,
   spaceBetween: 5,
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   grabCursor: true,
   breakpoints: {
   // when window width is >= 768px
     768: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       spaceBetween: 5,
       keyboard: {
         enabled: true,
@@ -218,6 +215,10 @@ const gallery = new Swiper ('.gallery__slides', {
         slideToClickedSlide: true,
       },
     },
+    // when window width is >= 1440px
+    1440: {
+      enabled: false,
+    }
   },
   // Navigation arrows
   navigation: {
@@ -226,15 +227,9 @@ const gallery = new Swiper ('.gallery__slides', {
   },
 });
 
-if(window.innerWidth >= 1440) {
-  gallery.destroy();
-}
-
 heroSwiper.init();
 tours.init();
 trainers.init();
 reviews.init();
-onChangeAdv();
-window.addEventListener('resize', onChangeAdv);
+advSlides.init();
 gallery.init();
-window.addEventListener('resize', gallery.init());
