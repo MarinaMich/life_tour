@@ -46,14 +46,14 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  color: $dark_main;
+  color: $dark-main;
   outline: 1px solid rgba(45, 56, 63, 0.3);
   text-align: center;
   top: 1px;
   right: 1px;
 
   &:hover {
-    outline-color: $dark_main;
+    outline-color: $dark-main;
   }
 
   &:focus {
@@ -62,12 +62,11 @@
 
   &:active {
     color: $white;
-    background-color: $add_blue;
+    background-color: $add-blue;
   }
 
   &--disabled {
     pointer-events: none;
-    outline: none;
     outline: 1px solid rgba(45, 56, 63, 1);
     opacity: 0.3;
   }

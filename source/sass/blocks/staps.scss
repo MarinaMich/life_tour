@@ -9,6 +9,7 @@
 
 .staps__list {
   @include list-reset;
+
   padding-left: 29px;
   padding-right: 30px;
   position: relative;
@@ -21,7 +22,7 @@
     content: "";
     width: 2px;
     height: calc(100% - 23px);
-    background-color: $add_blue;
+    background-color: $add-blue;
     top: 11px;
     left: 6px;
   }
@@ -40,7 +41,7 @@
     content: "";
     width: 14px;
     height: 14px;
-    background-color: $add_blue;
+    background-color: $add-blue;
     top: 30%;
     left: -29px;
     border-radius: 50%;
@@ -95,7 +96,7 @@
     column-gap: 134px;
     row-gap: 104px;
     grid-template-areas:
-      "map mountain"
+      "map   mountain"
       "boots tree";
 
     &::after {
@@ -106,6 +107,11 @@
   .staps__item {
     font-size: 14px;
     line-height: 22px;
+    width: 232px;
+
+    &::before {
+      content: none;
+    }
 
     &::after {
       top: 2px;
@@ -126,13 +132,6 @@
 
   .staps__item--mountain {
     grid-area: mountain;
-  }
-
-  .staps__item {
-    width: 232px;
-    &::before {
-      content: none;
-    }
   }
 }
 

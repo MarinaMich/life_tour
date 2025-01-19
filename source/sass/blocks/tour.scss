@@ -21,6 +21,7 @@
 
 .tour__info {
   @include list-reset;
+
   display: flex;
   column-gap: 5px;
   row-gap: 12px;
@@ -31,13 +32,13 @@
 
 .tour__place {
   padding: 8px 12px 8px 34px;
-  background-color: $add_blue;
+  background-color: $add-blue;
   position: relative;
 
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 9px;
     height: 12px;
     background-image: url("/__spritemap#sprite-pin-view");
@@ -60,7 +61,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     background-image: url("/__spritemap#sprite-sun-view");
@@ -77,7 +78,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
     background-image: url("/__spritemap#sprite-moon-view");
@@ -97,7 +98,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: -15px;
     left: 0;
     width: 80px;
@@ -118,7 +119,7 @@
   }
 
   dt::after {
-    content: ': ';
+    content: ": ";
   }
 }
 
@@ -189,14 +190,11 @@
   .tour__description {
     width: 340px;
     max-height: 195px;
+    position: absolute;
+    bottom: 30px;
   }
 
   .tour__title {
     padding-right: 70px;
-  }
-
-  .tour__description {
-    position: absolute;
-    bottom: 30px;
   }
 }

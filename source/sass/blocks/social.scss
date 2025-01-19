@@ -1,5 +1,6 @@
 .social {
   @include list-reset;
+
   display: flex;
   gap: 16px;
   width: 122px;
@@ -8,8 +9,7 @@
 }
 
 .social__link {
-  color: $dark_main;
-  display: block;
+  color: $dark-main;
   width: 30px;
   height: 30px;
   outline: 1px solid rgba(45, 56, 63, 0.3);
@@ -18,7 +18,7 @@
   justify-content: center;
 
   &:hover {
-    outline-color: $dark_main;
+    outline-color: $dark-main;
   }
 
   &:focus {
@@ -27,12 +27,11 @@
 
   &:active {
     color: $white;
-    background-color: $add_blue;
+    background-color: $add-blue;
   }
 
   &--disabled {
     pointer-events: none;
-    outline: none;
     outline: 1px solid rgba(45, 56, 63, 1);
     opacity: 0.3;
   }

@@ -1,7 +1,7 @@
 .tours {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: $dark_main;
+  color: $dark-main;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
@@ -14,6 +14,7 @@
 
 .tours__link {
   @include link-edit;
+
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -42,7 +43,7 @@
   }
 
   &:active {
-    color: $add_blue_button;
+    color: $add-blue-button;
   }
 }
 
@@ -100,26 +101,29 @@
     width: 37px;
     height: 35px;
     padding: 13px 11px;
-    background-color: $add_blue;
+    background-color: $add-blue;
     color: $white;
 
     &:hover {
       background-color: $white;
-      outline: 1px solid #1C3374;
+      outline: 1px solid #1c3374;
+
       svg {
-        color: $add_blue_button;
+        color: $add-blue-button;
       }
     }
 
     &:focus {
       background-color: $white;
+
       svg {
-        color: $add_blue_button;
+        color: $add-blue-button;
       }
     }
 
     &:active {
-      background-color: $add_blue_button;
+      background-color: $add-blue-button;
+
       svg {
         color: $white;
       }

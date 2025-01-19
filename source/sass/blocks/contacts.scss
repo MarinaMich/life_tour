@@ -18,6 +18,7 @@
 
 .contacts__data {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -75,17 +76,18 @@
 
   &:focus,
   &:focus-visible {
-    color: $add_blue;
+    color: $add-blue;
   }
 
   &:active {
-    color: $add_blue_button;
+    color: $add-blue-button;
   }
 }
 
 .contacts__info--phone,
 .contacts__info--email {
   @include link-edit;
+
   display: block;
 }
 
@@ -118,7 +120,7 @@
   }
 
   .contacts__shade {
-    top: 5px
+    top: 5px;
   }
 
   .contacts__text {
@@ -135,6 +137,7 @@
 
   .contacts__item {
     padding-left: 34px;
+
     &::before {
       width: 24px;
       height: 24px;
@@ -170,10 +173,6 @@
   .contacts__info {
     font-size: 14px;
     line-height: 22px;
-  }
-
-  .contacts__info--address {
-    width: auto;
   }
 
   .contacts__map {

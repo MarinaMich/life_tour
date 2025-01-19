@@ -1,7 +1,7 @@
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: $add_blue;
+  background-color: $add-blue;
   color: $white;
   position: relative;
   min-height: 100px;
@@ -24,26 +24,26 @@
 
 .header__phone {
   @include link-edit;
+
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
   text-align: right;
-  //padding-top: 2px;
   min-height: 14px;
   grid-column: 2/3;
   grid-row: 2/3;
 
   &:hover {
-    color:rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   &:focus {
-    color: $dark_main;
+    color: $dark-main;
   }
 
   &:active {
-    color: $add_blue_button;
+    color: $add-blue-button;
   }
 }
 
@@ -53,7 +53,7 @@
 
   &:focus,
   &:focus-visible {
-    color: $dark_main;
+    color: $dark-main;
   }
 }
 

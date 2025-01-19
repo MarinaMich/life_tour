@@ -51,25 +51,25 @@
   line-height: 16px;
   text-align: center;
   color: $white;
-  background-color: $add_blue;
+  background-color: $add-blue;
   border: none;
   padding: 20px;
 
   &:hover {
-    outline: 1px solid $add_blue_button;
-    color: $add_blue_button;
+    outline: 1px solid $add-blue-button;
+    color: $add-blue-button;
     background-color: $white;
   }
 
   &:focus,
   &:focus-visible {
-    color: $add_blue_button;
+    color: $add-blue-button;
     background-color: $white;
     outline: none;
   }
 
   &:active {
-    background-color: $add_blue_button;
+    background-color: $add-blue-button;
     color: $white;
   }
 
@@ -96,13 +96,7 @@
   height: 16px;
   opacity: 1;
   background-color: inherit;
-}
 
-.premiere__pagination .swiper-pagination-bullet-active {
-  background-color: $white;
-}
-
-.premiere__pagination .swiper-pagination-bullet {
   &:hover {
     background-color: #d9d9d9;
   }
@@ -115,6 +109,10 @@
     outline-offset: 2px;
     outline: 1px solid rgba(255, 255, 255, 0.5);
   }
+}
+
+.premiere__pagination .swiper-pagination-bullet-active {
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,16 +129,18 @@
       width: 266px;
       height: 351px;
       background-size: 266px 351px;
-      background-image: image-set(
-        "/img/tablet/polaroid1.webp" type("image/webp"),
-        "/img/tablet/polaroid1.png" type("image/png")
-      );
-
-      @media (min-resolution: 2dppx) {
-        background-image: image-set(
-          "/img/tablet/polaroid1@2x.webp" type("image/webp"),
-          "/img/tablet/polaroid1@2x.png" type("image/png")
+      background-image:
+        image-set(
+          "/img/tablet/polaroid1.webp" type("image/webp"),
+          "/img/tablet/polaroid1.png" type("image/png")
         );
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            "/img/tablet/polaroid1@2x.webp" type("image/webp"),
+            "/img/tablet/polaroid1@2x.png" type("image/png")
+          );
       }
     }
 
@@ -152,16 +152,18 @@
       width: 236px;
       height: 312px;
       background-size: 236px 312px;
-      background-image: image-set(
-        "/img/tablet/polaroid2.webp" type("image/webp"),
-        "/img/tablet/polaroid2.png" type("image/png")
-      );
-
-      @media (min-resolution: 2dppx) {
-        background-image: image-set(
-          "/img/tablet/polaroid2@2x.webp" type("image/webp"),
-          "/img/tablet/polaroid2@2x.png" type("image/png")
+      background-image:
+        image-set(
+          "/img/tablet/polaroid2.webp" type("image/webp"),
+          "/img/tablet/polaroid2.png" type("image/png")
         );
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            "/img/tablet/polaroid2@2x.webp" type("image/webp"),
+            "/img/tablet/polaroid2@2x.png" type("image/png")
+          );
       }
     }
   }
@@ -226,6 +228,7 @@
 
   .premiere__details {
     @include list-reset;
+
     display: flex;
     column-gap: 10px;
     font-family: "Montserrat", "Arial", sans-serif;
@@ -244,7 +247,7 @@
   .premiere__duration {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 12px;
       height: 12px;
       background: url("/__spritemap#sprite-moon-view") no-repeat center;
@@ -256,7 +259,7 @@
   .premiere__level {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 12px;
       height: 12px;
       background: url("/__spritemap#sprite-level-view") no-repeat center;
@@ -285,16 +288,18 @@
       width: 308px;
       height: 407px;
       background-size: 308px 407px;
-      background-image: image-set(
-        "/img/desktop/polaroid1-desk.webp" type("image/webp"),
-        "/img/desktop/polaroid1-desk.png" type("image/png")
-      );
-
-      @media (min-resolution: 2dppx) {
-        background-image: image-set(
-          "/img/desktop/polaroid1-desk@2x.webp" type("image/webp"),
-          "/img/desktop/polaroid1-desk@2x.png" type("image/png")
+      background-image:
+        image-set(
+          "/img/desktop/polaroid1-desk.webp" type("image/webp"),
+          "/img/desktop/polaroid1-desk.png" type("image/png")
         );
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            "/img/desktop/polaroid1-desk@2x.webp" type("image/webp"),
+            "/img/desktop/polaroid1-desk@2x.png" type("image/png")
+          );
       }
     }
 
@@ -307,16 +312,18 @@
       width: 277px;
       height: 366px;
       background-size: 277px 366px;
-      background-image: image-set(
-        "/img/desktop/polaroid-desk2.webp" type("image/webp"),
-        "/img/desktop/polaroid-desk2.png" type("image/png")
-      );
-
-      @media (min-resolution: 2dppx) {
-        background-image: image-set(
-          "/img/desktop/polaroid-desk2@2x.webp" type("image/webp"),
-          "/img/desktop/polaroid-desk2@2x.png" type("image/png")
+      background-image:
+        image-set(
+          "/img/desktop/polaroid-desk2.webp" type("image/webp"),
+          "/img/desktop/polaroid-desk2.png" type("image/png")
         );
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            "/img/desktop/polaroid-desk2@2x.webp" type("image/webp"),
+            "/img/desktop/polaroid-desk2@2x.png" type("image/png")
+          );
       }
     }
   }

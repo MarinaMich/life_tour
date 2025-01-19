@@ -1,5 +1,5 @@
 .hero {
-  background-color: $add_blue;
+  background-color: $add-blue;
 }
 
 .hero__slides {
@@ -10,13 +10,13 @@
 
 .hero__slides--dark {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: $dark_main;
+    background-color: $dark-main;
     opacity: 0.6;
     z-index: 20;
   }

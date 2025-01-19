@@ -1,82 +1,69 @@
 .main {
-  background: image-set(
-    url("../../img/mobile/clouds-mob.webp") type("image/webp") 1x,
-    url("../../img/mobile/clouds-mob@2x.webp") type("image/webp") 2x,
-    url("../../img/mobile/clouds-mob.png") type("image/png") 1x,
-    url("../../img/mobile/clouds-mob@2x.png") type("image/png") 2x)
+  background:
+    image-set(
+      url("../../img/mobile/clouds-mob.webp") type("image/webp") 1x,
+      url("../../img/mobile/clouds-mob@2x.webp") type("image/webp") 2x,
+      url("../../img/mobile/clouds-mob.png") type("image/png") 1x,
+      url("../../img/mobile/clouds-mob@2x.png") type("image/png") 2x)
     top 578px right 0 no-repeat;
 }
 
 @media (min-width: $tablet-width) {
   .main {
-    background: image-set(
-      url("../../img/tablet/clouds-1.webp") type("image/webp") 1x,
-      url("../../img/tablet/clouds-1@2x.webp") type("image/webp") 2x,
-      url("../../img/tablet/clouds-1.png") type("image/png") 1x,
-      url("../../img/tablet/clouds-1@2x.png") type("image/png") 2x)
+    background:
+      image-set(
+        url("../../img/tablet/clouds-1.webp") type("image/webp") 1x,
+        url("../../img/tablet/clouds-1@2x.webp") type("image/webp") 2x,
+        url("../../img/tablet/clouds-1.png") type("image/png") 1x,
+        url("../../img/tablet/clouds-1@2x.png") type("image/png") 2x)
       top 942px right 0 no-repeat,
-
-    image-set(
-      url("../../img/tablet/clouds-2.webp") type("image/webp") 1x,
-      url("../../img/tablet/clouds-2@2x.webp") type("image/webp") 2x,
-      url("../../img/tablet/clouds-2.png") type("image/png") 1x,
-      url("../../img/tablet/clouds-2@2x.png") type("image/png") 2x)
+      image-set(
+          url("../../img/tablet/clouds-2.webp") type("image/webp") 1x,
+          url("../../img/tablet/clouds-2@2x.webp") type("image/webp") 2x,
+          url("../../img/tablet/clouds-2.png") type("image/png") 1x,
+          url("../../img/tablet/clouds-2@2x.png") type("image/png") 2x)
       top 2283px right 0 no-repeat,
-
-    image-set(
-      url("../../img/tablet/clouds-left.webp") type("image/webp") 1x,
-      url("../../img/tablet/clouds-left@2x.webp") type("image/webp") 2x,
-      url("../../img/tablet/clouds-left.png") type("image/png") 1x,
-      url("../../img/tablet/clouds-left@2x.png") type("image/png") 2x)
+      image-set(
+            url("../../img/tablet/clouds-left.webp") type("image/webp") 1x,
+            url("../../img/tablet/clouds-left@2x.webp") type("image/webp") 2x,
+            url("../../img/tablet/clouds-left.png") type("image/png") 1x,
+            url("../../img/tablet/clouds-left@2x.png") type("image/png") 2x)
       top 4166px left 0 no-repeat,
-
-    image-set(
-      url("../../img/tablet/clouds-right.webp") type("image/webp") 1x,
-      url("../../img/tablet/clouds-right@2x.webp") type("image/webp") 2x,
-      url("../../img/tablet/clouds-right.png") type("image/png") 1x,
-      url("../../img/tablet/clouds-right@2x.png") type("image/png") 2x)
+      image-set(
+              url("../../img/tablet/clouds-right.webp") type("image/webp") 1x,
+              url("../../img/tablet/clouds-right@2x.webp") type("image/webp") 2x,
+              url("../../img/tablet/clouds-right.png") type("image/png") 1x,
+              url("../../img/tablet/clouds-right@2x.png") type("image/png") 2x)
       top 4665px right 0 no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main {
-    background: image-set(
-      url("../../img/desktop/clouds-1.webp") type("image/webp") 1x,
-      url("../../img/desktop/clouds-1@2x.webp") type("image/webp") 2x,
-      url("../../img/desktop/clouds-1.png") type("image/png") 1x,
-      url("../../img/desktop/clouds-1@2x.png") type("image/png") 2x)
+    background:
+      image-set(
+        url("../../img/desktop/clouds-1.webp") type("image/webp") 1x,
+        url("../../img/desktop/clouds-1@2x.webp") type("image/webp") 2x,
+        url("../../img/desktop/clouds-1.png") type("image/png") 1x,
+        url("../../img/desktop/clouds-1@2x.png") type("image/png") 2x)
       top 674px right 0 no-repeat,
-
-    image-set(
-      url("../../img/desktop/clouds-2.webp") type("image/webp") 1x,
-      url("../../img/desktop/clouds-2@2x.webp") type("image/webp") 2x,
-      url("../../img/desktop/clouds-2.png") type("image/png") 1x,
-      url("../../img/desktop/clouds-2@2x.png") type("image/png") 2x)
+      image-set(
+          url("../../img/desktop/clouds-2.webp") type("image/webp") 1x,
+          url("../../img/desktop/clouds-2@2x.webp") type("image/webp") 2x,
+          url("../../img/desktop/clouds-2.png") type("image/png") 1x,
+          url("../../img/desktop/clouds-2@2x.png") type("image/png") 2x)
       top 2226px right 0 no-repeat,
-
-    image-set(
-      url("../../img/desktop/clouds-left.webp") type("image/webp") 1x,
-      url("../../img/desktop/clouds-left@2x.webp") type("image/webp") 2x,
-      url("../../img/desktop/clouds-left.png") type("image/png") 1x,
-      url("../../img/desktop/clouds-left@2x.png") type("image/png") 2x)
+      image-set(
+            url("../../img/desktop/clouds-left.webp") type("image/webp") 1x,
+            url("../../img/desktop/clouds-left@2x.webp") type("image/webp") 2x,
+            url("../../img/desktop/clouds-left.png") type("image/png") 1x,
+            url("../../img/desktop/clouds-left@2x.png") type("image/png") 2x)
       top 3443px left 0 no-repeat,
-
-    image-set(
-      url("../../img/desktop/clouds-right.webp") type("image/webp") 1x,
-      url("../../img/desktop/clouds-right@2x.webp") type("image/webp") 2x,
-      url("../../img/desktop/clouds-right.png") type("image/png") 1x,
-      url("../../img/desktop/clouds-right@2x.png") type("image/png") 2x)
+      image-set(
+              url("../../img/desktop/clouds-right.webp") type("image/webp") 1x,
+              url("../../img/desktop/clouds-right@2x.webp") type("image/webp") 2x,
+              url("../../img/desktop/clouds-right.png") type("image/png") 1x,
+              url("../../img/desktop/clouds-right@2x.png") type("image/png") 2x)
       top 3617px right 0 no-repeat;
   }
 }
-
-/*  background-image: image-set(
-    url("../../img/mobile/clouds-mob.webp") type("image/webp") 1x,
-    url("../../img/mobile/clouds-mob@2x.webp") type("image/webp") 2x,
-    url("../../img/mobile/clouds-mob.png") type("image/png") 1x,
-    url("../../img/mobile/clouds-mob@2x") type("image/png") 2x);
-  background-repeat: no-repeat;
-  background-position:
-  top 578px right 0;*/
-

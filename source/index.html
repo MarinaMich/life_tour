@@ -16,11 +16,11 @@
     <header class="header container" data-test="header">
       <a class="header__logo" href="#">
         <picture>
-          <img src="img/logo.svg" alt="Логотип туристической организации.">
+          <img src="img/logo.svg" width="142" height="42" alt="Логотип туристической организации.">
         </picture>
       </a>
       <a class="header__phone link" href="tel:+78000000000">8 800 000-00-00</a>
-      <nav class="header__menu menu menu--closed">
+      <nav class="header__menu menu menu--closed" aria-label="Primary">
         <button class="menu__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
@@ -53,7 +53,7 @@
           <!-- Additional required wrapper -->
           <div class="premiere__wrapper swiper-wrapper">
             <!-- Slides -->
-            <div class="premiere__slide swiper-slide" lazy="true">
+            <div class="premiere__slide swiper-slide">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -63,21 +63,21 @@
                   <!-- JPG -->
                   <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop1.jpg 1x, img/desktop/hero-desktop1@2x.jpg 2x">
                   <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab1.jpg 1x, img/tablet/hero-tab1@2x.jpg 2x">
-                  <img width="320" height="568" src="img/mobile/hero-mob1.jpg" srcset="img/mobile/hero-mob1@2x.jpg" alt="Вершины Кавказа.">
+                  <img width="320" height="568" src="img/mobile/hero-mob1.jpg" srcset="img/mobile/hero-mob1@2x.jpg" alt="Вершины Кавказа." loading="lazy">
                 </picture>
               </div>
               <div class="premiere__description">
                 <h2>Захватывающие вершины Кавказа</h2>
                 <p>В сопровождении опытных гидов вы пройдёте через потрясающие
                   ландшафты и совершите восход на вершину горы Чегет.</p>
-                <button class="premiere__button">Смотреть тур</button>
+                <button class="premiere__button" type="button">Смотреть тур</button>
                 <ul class="premiere__details">
                   <li class="premiere__duration">6 дней/5 ночей</li>
                   <li class="premiere__level">Высокая сложность</li>
                 </ul>
               </div>
             </div>
-            <div class="premiere__slide swiper-slide premiere__slide--polaroid" lazy="true">
+            <div class="premiere__slide swiper-slide premiere__slide--polaroid">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -87,20 +87,20 @@
                   <!-- JPG -->
                   <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop2.jpg 1x, img/desktop/hero-desktop2@2x.jpg 2x">
                   <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab2.jpg 1x, img/tablet/hero-tab2@2x.jpg 2x">
-                  <img width="320" height="568" src="img/mobile/hero-mob2.jpg" srcset="img/mobile/hero-mob2@2x.jpg" alt="Природа Камчатки.">
+                  <img width="320" height="568" src="img/mobile/hero-mob2.jpg" srcset="img/mobile/hero-mob2@2x.jpg" alt="Природа Камчатки." loading="lazy">
                 </picture>
               </div>
               <div class="premiere__description">
                 <h2>Невероятная природа Камчатки</h2>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в мире.</p>
-                <button class="premiere__button">Смотреть тур</button>
+                <button class="premiere__button" type="button">Смотреть тур</button>
                 <ul class="premiere__details">
                   <li class="premiere__duration">6 дней/5 ночей</li>
                   <li class="premiere__level">Высокая сложность</li>
                 </ul>
               </div>
             </div>
-            <div class="premiere__slide swiper-slide" lazy="true">
+            <div class="premiere__slide swiper-slide">
               <div class="premiere__img">
                 <picture>
                   <!-- WebP -->
@@ -110,13 +110,13 @@
                   <!-- JPG -->
                   <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/hero-desktop3.jpg 1x, img/desktop/hero-desktop3@2x.jpg 2x">
                   <source type="image/png" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/hero-tab3.jpg 1x, img/tablet/hero-tab3@2x.jpg 2x">
-                  <img width="320" height="568" src="img/mobile/hero-mob3.jpg" srcset="img/mobile/hero-mob3@2x.jpg"  alt="Горный Алтай.">
+                  <img width="320" height="568" src="img/mobile/hero-mob3.jpg" srcset="img/mobile/hero-mob3@2x.jpg"  alt="Горный Алтай." loading="lazy">
                 </picture>
               </div>
               <div class="premiere__description">
                 <h2>Магические пейзажи Алтайского Края</h2>
                 <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                <button class="premiere__button">Смотреть тур</button>
+                <button class="premiere__button" type="button">Смотреть тур</button>
                 <ul class="premiere__details">
                   <li class="premiere__duration">6 дней/5 ночей</li>
                   <li class="premiere__level">Высокая сложность</li>
@@ -169,7 +169,7 @@
                     <div>
                       <dt class="tour__detail">Даты набора</dt>
                       <dd class="tour__time-frame">
-                        <time datetime="06-12/06-19">12.06–19.06</time>
+                        <time datetime="06-12">12.06</time>–<time datetime="06-19">19.06</time>
                       </dd>
                     </div>
                     <div>
@@ -212,7 +212,7 @@
                     <div>
                       <dt class="tour__detail">Даты набора</dt>
                       <dd class="tour__time-frame">
-                        <time datetime="06-12/06-19">14.06–23.06</time>
+                        <time datetime="06-14">14.06</time>–<time datetime="06-23">23.06</time>
                       </dd>
                     </div>
                     <div>
@@ -255,7 +255,7 @@
                     <div>
                       <dt class="tour__detail">Даты набора</dt>
                       <dd class="tour__time-frame">
-                        <time datetime="06-12/06-19">15.07–19.07</time>
+                        <time datetime="07-15">15.07</time>–<time datetime="07-19">19.07</time>
                       </dd>
                     </div>
                     <div>
@@ -298,7 +298,7 @@
                     <div>
                       <dt class="tour__detail">Даты набора</dt>
                       <dd class="tour__time-frame">
-                        <time datetime="06-12/06-19">12.07–19.07</time>
+                        <time datetime="07-12">12.07</time>–<time datetime="07-19">19.07</time>
                       </dd>
                     </div>
                     <div>
@@ -755,7 +755,7 @@
         <div class="form__wrapper">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с вами&nbsp;для консультации.</p>
-          <form id="form" class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form__form" id="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__box">
               <label class="form__label" for="phone" tabindex="0">Телефон</label>
               <input class="form__input" id="phone"  type="tel" name="phone" pattern="^((\+7|7|8)+([0-9]){10})$" placeholder="+7 (000)-000-00-00" required>
@@ -807,13 +807,14 @@
         </div>
       </section>
       <section class="footer__main">
+        <h2 class="visually-hidden">Меню сайта и ссылки на соцсети.</h2>
         <div class="footer__menu">
           <a class="footer__logo" href="#">
             <picture>
               <img src="img/logo-dark.svg" width="142" height="42" alt="Логотип туристической организации.">
             </picture>
           </a>
-          <nav class="footer__links">
+          <nav class="footer__links" aria-label="Secondary">
             <ul class="footer__links-left">
               <li class="footer__item">
                 <a class="footer__link link" href="#tours">Туры</a>
@@ -868,26 +869,6 @@
         <span class="footer__privacy">Политика конфиденциальности</span>
       </section>
     </footer>
-
-<!--
-    пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    примеры требуемых атрибутов data-test="*"
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-  -->
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
