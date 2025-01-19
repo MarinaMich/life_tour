@@ -17,3 +17,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    gap: 15px;
+  }
+}
