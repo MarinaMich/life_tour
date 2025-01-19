@@ -18,4 +18,45 @@
 .footer__main {
   padding-top: 23px;
   padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 42px auto auto auto;
+  row-gap: 23px;
+}
+
+.footer__logo {
+  display: block;
+  width: 142px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links-right,
+.footer__links-left {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__item {
+  width: 120px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.footer__link {
+  @include link-edit;
+  cursor: pointer;
+}
+
+.footer__privacy {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: center;
 }
