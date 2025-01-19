@@ -34,7 +34,7 @@
   height: 266px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  row-gap: 6px;
 }
 
 .gallery__img {
@@ -188,13 +188,12 @@
   .gallery__wrapper {
     width: auto;
     display: flex;
-    column-gap: 5px;
   }
 
   .gallery__slide {
     width: 284px;
     height: 463px;
-    gap: 7px;
+    row-gap: 7px;
   }
 
   .gallery__img--high {
