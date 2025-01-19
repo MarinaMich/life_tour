@@ -68,8 +68,19 @@
   }
 }
 
-.contacts__info{
+.contacts__item a {
+  &:hover {
+    opacity: 0.3;
+  }
 
+  &:focus,
+  &:focus-visible {
+    color: $add_blue;
+  }
+
+  &:active {
+    color: $add_blue_button;
+  }
 }
 
 .contacts__info--phone,

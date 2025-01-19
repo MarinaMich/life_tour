@@ -63,6 +63,19 @@
   @include link-edit;
   cursor: pointer;
   padding: 3px 5px;
+
+  &:hover {
+    border-bottom: 1px solid $dark_main;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $dark_main;
+  }
+
+  &:active {
+    color: $add_blue;
+  }
 }
 
 .footer__privacy {
@@ -148,5 +161,17 @@
     font-weight: 600;
     line-height: 18px;
     text-align: right;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      color: $add_blue;
+    }
+
+    &:active {
+      color: $add_blue_button;
+    }
   }
 }
